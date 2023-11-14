@@ -19,7 +19,7 @@ let localNotification = Notifications.postLocalNotification({
 	silent: false,
 	category: "SOME_CATEGORY",
 	userInfo: { },
-	fireDate: new Date(Date.now() + 10000).toISOString() // isoString
+	fireDate: new Date(),
 });
 ```
 
@@ -47,7 +47,7 @@ let someLocalNotification = Notifications.postLocalNotification({
 	sound: "chime.aiff",
 	category: "SOME_CATEGORY",
 	userInfo: { },
-	fireDate: new Date(Date.now() + 10000).toISOString() // isoString
+	fireDate: new Date(),
 });
 
 Notifications.cancelLocalNotification(someLocalNotification);
